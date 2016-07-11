@@ -1,2 +1,2 @@
-# wbrgss.github.io
-My personal website and blog.
+# wbrgss
+Personal website
