@@ -448,6 +448,7 @@ h1 {
 @media (max-width: 900px) {
   #menu ul li {
     margin-right: 100%;
+    font-size: 1.6em
   }
   #menu ul li#online-feat {
     margin-right: 50px;
