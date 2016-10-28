@@ -449,7 +449,7 @@ h1 {
   #menu ul li {
     margin-right: 100%;
   }
-  #online-feat {
+  #menu ul li#online-feat {
     margin-right: 50px;
   }
 }
