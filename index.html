@@ -26,115 +26,6 @@
         <script src="js/main.js"></script>
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-                <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-
-        <!-- Isotope Initialize -->
-        <script>
-            $(document).ready( function() {
-              $('.grid').isotope({
-                itemSelector: '.grid-item',
-                masonry: {
-                  columnWidth: 50,
-                  gutter: 5
-                }
-              });
-
-
-              var $optionSets = $('#options .option-set'),
-              $optionLinks = $optionSets.find('a');
-            });
-        </script>
-
-        <!-- Isotope Sorting -->
-        <script>
-          $('nav.primary ul a').click(function(){
-              var selector = $(this).attr('data-filter');
-              var sorter = $(this).attr('data-option-value');
-              $('.grid').isotope({
-                  filter: selector,
-                  animationOptions: {
-                      duration: 750,
-                      easing: 'linear',
-                      queue: false,
-                  }
-
-              });
-            return false;
-          });
-
-
-        $('nav.primary ul a .dater').click(function(){
-
-          $('.grid').isotope({
-            getSortData: {
-                date: function ($elem) {
-                    return Date.parse($elem.find('.nodate').text());
-                }
-            },
-
-            sortBy : 'date'
-          });
-      });
-
-
-        /*  Isotope Hashing */
-
-        function getHashFilter() {
-          var hash = location.hash;
-          // get filter=filterName
-          var matches = location.hash.match( /filter=([^&]+)/i );
-          var hashFilter = matches && matches[1];
-          return hashFilter && decodeURIComponent( hashFilter );
-        }
-
-        $( function() {
-
-          var $grid = $('.grid');
-
-          // bind filter button click
-            $('nav.primary ul a').click(function(){
-            var filterAttr = $( this ).attr('data-filter');
-            if ((filterAttr != ".lin") &&  (filterAttr != ".git")) {
-            // set filter in hash
-              location.hash = 'filter=' + encodeURIComponent( filterAttr );
-            }
-            else if (filterAttr != ".git") {
-              window.location.href = 'https://ca.linkedin.com/in/wbrgss';
-            }
-            else {
-              window.location.href = 'https://github.com/wbrgss';
-            }
-          });
-
-          var isIsotopeInit = false;
-
-          function onHashchange() {
-            var hashFilter = getHashFilter();
-            if ( !hashFilter && isIsotopeInit ) {
-              return;
-            }
-            isIsotopeInit = true;
-            // filter isotope
-            $grid.isotope({
-              itemSelector: '.grid-item',
-              filter: hashFilter
-            });
-          }
-
-          $(window).on( 'hashchange', onHashchange );
-          // trigger event handler to init Isotope
-          onHashchange();
-        });
-        
-        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -281,5 +172,114 @@
 
                     </div>
             </div>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <!-- Isotope Initialize -->
+        <script>
+            $(document).ready( function() {
+              $('.grid').isotope({
+                itemSelector: '.grid-item',
+                masonry: {
+                  columnWidth: 50,
+                  gutter: 5
+                }
+              });
+
+
+              var $optionSets = $('#options .option-set'),
+              $optionLinks = $optionSets.find('a');
+            });
+        </script>
+
+        <!-- Isotope Sorting -->
+        <script>
+          $('nav.primary ul a').click(function(){
+              var selector = $(this).attr('data-filter');
+              var sorter = $(this).attr('data-option-value');
+              $('.grid').isotope({
+                  filter: selector,
+                  animationOptions: {
+                      duration: 750,
+                      easing: 'linear',
+                      queue: false,
+                  }
+
+              });
+            return false;
+          });
+
+
+        $('nav.primary ul a .dater').click(function(){
+
+          $('.grid').isotope({
+            getSortData: {
+                date: function ($elem) {
+                    return Date.parse($elem.find('.nodate').text());
+                }
+            },
+
+            sortBy : 'date'
+          });
+      });
+
+
+        /*  Isotope Hashing */
+
+        function getHashFilter() {
+          var hash = location.hash;
+          // get filter=filterName
+          var matches = location.hash.match( /filter=([^&]+)/i );
+          var hashFilter = matches && matches[1];
+          return hashFilter && decodeURIComponent( hashFilter );
+        }
+
+        $( function() {
+
+          var $grid = $('.grid');
+
+          // bind filter button click
+            $('nav.primary ul a').click(function(){
+            var filterAttr = $( this ).attr('data-filter');
+            if ((filterAttr != ".lin") &&  (filterAttr != ".git")) {
+            // set filter in hash
+              location.hash = 'filter=' + encodeURIComponent( filterAttr );
+            }
+            else if (filterAttr != ".git") {
+              window.location.href = 'https://ca.linkedin.com/in/wbrgss';
+            }
+            else {
+              window.location.href = 'https://github.com/wbrgss';
+            }
+          });
+
+          var isIsotopeInit = false;
+
+          function onHashchange() {
+            var hashFilter = getHashFilter();
+            if ( !hashFilter && isIsotopeInit ) {
+              return;
+            }
+            isIsotopeInit = true;
+            // filter isotope
+            $grid.isotope({
+              itemSelector: '.grid-item',
+              filter: hashFilter
+            });
+          }
+
+          $(window).on( 'hashchange', onHashchange );
+          // trigger event handler to init Isotope
+          onHashchange();
+        });
+        
+        </script>
     </body>
 </html> 
