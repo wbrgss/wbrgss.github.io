@@ -14,7 +14,7 @@
         <meta name="description" content="Portfolio | Will Burgess">
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v=0.1">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <!-- JS for no awkward DOM rendering -->
@@ -78,19 +78,11 @@
 
                       <a href="http://www.mcgilltribune.com/refer"><div class="grid-item grid-item--width2 grid-item--height2 microsite"><span class="hov"><p>McGill Tribune Referendum 2014</p></span><img src="img/refer.png" style="padding: 10px" width="318px" height="auto"></div></a>
 
-                      <a href="http://www.hertzsearch.com"><div class="grid-item grid-item--width2 grid-item--height2 website"><span class="hov"><p>hertzsearch.com</p></span><img src="img/hzsearch.png" style="padding: 10px" width="318px" height="auto"></div></a>
+                      <a href="http://www.hertzsearch.com"><div class="grid-item grid-item--width2 grid-item--height2 website"><span class="hov"><p>downsampler.com</p></span><img src="img/hzsearch.png" style="padding: 10px" width="318px" height="auto"></div></a>
 
                       <a href="http://www.mcgill.ca/oasis"><div class="grid-item grid-item--width2 website"><span class="hov"><p style="margin-top: 171px">mcgill.ca/oasis</p></span><img src="img/mcgill.png" style="padding: 10px" width="318px" height="auto"></div></a>
 
                       <a href="http://mcgilltribune.com/changing-nature-canadian-american-border-security/"><div class="grid-item grid-item--width2 feature"><span class="nodate">12/01/2015</span><span class="hov"><p>Online Feature:</span><br>The changing nature of Canadian and American border security</p></span><img src="img/feature_thumbs/f_borders.jpg" style="margin: 2px" width="314px" ></div></a>
-
-                      <!-- Articles -->
-
-
-
-
-
-
 
 
 
@@ -251,12 +243,15 @@
           // bind filter button click
             $('nav.primary ul a').click(function(){
             var filterAttr = $( this ).attr('data-filter');
-            if (filterAttr != ".lin") {
+            if (filterAttr != ".lin" && filterAttr != ".git") {
             // set filter in hash
               location.hash = 'filter=' + encodeURIComponent( filterAttr );
             }
-            else {
+            else if (filterAttr == ".lin" {
               window.location.href = 'http://ca.linkedin.com/in/wbrgss';
+            }
+            else {
+              window.location.href = 'https://github.com/wbrgss';
             }
           });
 
