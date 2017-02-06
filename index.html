@@ -197,8 +197,6 @@
 
               var $optionSets = $('#options .option-set'),
               $optionLinks = $optionSets.find('a');
-
-              $( "#all" ).click();
             });
         </script>
 
@@ -282,9 +280,20 @@
           // trigger event handler to init Isotope
           onHashchange();
         });
+      
+
+
+        </script>
+        
+        <script>
+            $(document).ready( function() {
+              $( "#all" ).click();
+              console.log("clicked all");
+            });
+        </script>
 
 
         
-        </script>
+        
     </body>
 </html> 
