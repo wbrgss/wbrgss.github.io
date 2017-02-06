@@ -183,6 +183,25 @@
         </script>
 
 
+        <!-- Isotope Initialize -->
+        <script>
+            $(document).ready( function() {
+              $('.grid').isotope({
+                itemSelector: '.grid-item',
+                masonry: {
+                  columnWidth: 50,
+                  gutter: 5
+                }
+              });
+
+
+              var $optionSets = $('#options .option-set'),
+              $optionLinks = $optionSets.find('a');
+
+              $( "#all" ).click();
+            });
+        </script>
+
         <!-- Isotope Sorting -->
         <script>
           $('nav.primary ul a').click(function(){
@@ -264,24 +283,7 @@
           onHashchange();
         });
 
-        <!-- Isotope Initialize -->
-        <script>
-            $(document).ready( function() {
-              $('.grid').isotope({
-                itemSelector: '.grid-item',
-                masonry: {
-                  columnWidth: 50,
-                  gutter: 5
-                }
-              });
 
-
-              var $optionSets = $('#options .option-set'),
-              $optionLinks = $optionSets.find('a');
-
-              $( "#all" ).click();
-            });
-        </script>
         
         </script>
     </body>
