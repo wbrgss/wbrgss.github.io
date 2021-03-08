@@ -1,2 +1,2 @@
 # wbrgss
-Personal website
+My personal website, [wbrgss.com](http://wbrgss.com/)
