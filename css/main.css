@@ -348,7 +348,7 @@ textarea {
 #main {
     margin: 0 auto;
     margin-top: 150px;
-    width: 86%;
+    width: calc(100% - 50px);
     height: 100%;
     min-height: 2000px;
 }
