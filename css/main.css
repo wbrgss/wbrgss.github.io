@@ -514,6 +514,8 @@ h1 {
     }
 
     .grid-item--width2 { width: 320px; }
+    .grid-item--width4 { width: 640px; }
+
     .grid-item--height2 { height: 320px; }
 
     .grid-item--height4 { height: 425px; }
@@ -555,7 +557,7 @@ h1 {
   font-size: 25px;
   margin-top: 5px;
   font-family: 'Decima Bold Italic';
-  margin-top: 115px;
+  margin-top: 50%;
 }
 
 .resume .hov p {
