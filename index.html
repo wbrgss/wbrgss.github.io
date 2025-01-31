@@ -53,13 +53,15 @@
                 <div id="main">
                     <nav id="menu" class="primary clearfix">
                       <ul class="filgroup" style="list-style-type: none">
-                         <li class="fil"><a href="" id="all" class="selected fil" data-filter=".project">All Projects</a></li>
+                         <li id="all-li" class="fil"><a href="" id="all" class="selected fil" data-filter=".project">All Projects</a></li>
+                         <li id="all-mobile" class="fil"><a href="" class="selected fil" data-filter=".project">All</a></li>
                          <li class="filgroup"><a href="#" class="fil" data-filter=".parsely">Parse.ly</a></li>
                          <li class="filgroup"><a href="#" class="fil" data-filter=".plotly">Plotly</a></li>
                          <li class="filgroup"><a href="#" class="fil" data-filter=".ffunction">FFunction</a></li>
                          <li class="filgroup"><a href="#" class="fil" data-filter=".autodesk">Autodesk</a></li>
-                         <li class="filgroup"><a href="#" class="fil" data-filter=".undergrad">Undergrad</a></li>
-                         <li class="filgroup">|</li>
+                         <li id="li-undergrad" class="filgroup"><a href="#" class="fil" data-filter=".undergrad">Undergrad</a></li>
+                         <li id="resume-sep" class="filgroup">|</li>
+                         <li id="resume-sep-mobile">———</li>
                          <li class="filgroup"><a href="#filter=.resume" class="fil" data-filter=".resume">Resume</a></li>
                          <li class="filgroup"><a href="https://github.com/wbrgss" data-filter=".git">GitHub</a></li>
                          <li class="filgroup" style="margin-right: 2px;"><a href="https://linkedin.com/in/wbrgss" data-filter=".lin">LinkedIn</a></li>
@@ -81,8 +83,9 @@
 
                       <a href="https://itsmylife.cancer.ca/index.html"><div class="grid-item grid-item--width2 grid-item--height2 project ffunction"><span class="hov"><p>It's My Life! (Canadian Cancer Society)</p></span><img src="img/ccs.jpg" style="padding: 10px" width="318px" height="auto"></div></a> <!-- archive link: https://web.archive.org/web/20220123001357/https://itsmylife.cancer.ca/?sex=all&page=0&lang=en&decisions=000100000000000 -->
 
-                      <a href="https://www.parse.ly/google-search-console-parsely/"><div class="grid-item grid-item--width4 grid-item--height2 project parsely" style="width: 650px"><span class="hov"><p>Google Search Console (Parse.ly)</p></span><img src="img/parsely_gsc.png" style="padding: 10px; margin-left: 5px" width="636px" height="318px" ></div></a>
+                      <a href="https://www.parse.ly/google-search-console-parsely/"><div id="gsc" class="grid-item grid-item--width4 grid-item--height2 project parsely" style="width: 650px"><span class="hov"><p>Google Search Console (Parse.ly)</p></span><img src="img/parsely_gsc.png" style="padding: 10px; margin-left: 5px" width="636px" height="318px" ></div></a>
 
+                      <a href="https://www.parse.ly/google-search-console-parsely/"><div id="gsc-mobile" class="grid-item grid-item--width2 grid-item--height2 project parsely"><span class="hov"><p>Google Search Console (Parse.ly)</p></span><img src="img/parsely_gsc_mobile.png" style="padding: 10px;" height="318px" ></div></a>
 
                       <a href="https://github.com/plotly"><div class="grid-item grid-item--width2 grid-item--height2 project plotly"><span class="hov"><p>Graphing Libraries (Plot.ly)</p></span><img src="img/plotly_graphing_libraries.png" style="padding: 10px" width="318px" height="auto"></div></a>
 

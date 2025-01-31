@@ -399,13 +399,94 @@ h1 {
     width: 90px;
     height: 90px;
     margin: 0 auto;
-    margin-top: 40px;
 
 }
 @media (min-width: 768px) {
   #propic {
     float: left;
   }
+
+  #gsc-mobile {
+    display: none;
+  }
+  #menu ul li#all-mobile {
+    display: none;
+  }
+  #menu ul li#resume-sep-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+    #menu ul li:nth-child(3):after,
+    #menu ul li:nth-child(5):after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #propic {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 715px) {
+    .grid-item {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 900px) {
+    #header {
+        margin: 0 auto;
+    }
+    #main {
+        margin-top: 40px;
+    }
+    #gsc-mobile {
+        display: block;
+    }
+    #gsc {
+        display: none;
+    }
+
+    #all-mobile {
+        display: inline-block;
+    }
+    #all {
+        display: none;
+    }
+
+    #resume-sep-mobile {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #resume-sep-mobile:after {
+        display: none;
+    }
+    #menu ul li#resume-sep {
+        display: none;
+    }
+
+    #menu ul {
+        justify-content: center;
+    }
+
+    #menu ul.filgroup li {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    #menu ul li:not(:last-of-type):after {
+        content: "-";
+        margin-left: 10px;
+    }
+
+    #menu ul li#li-undergrad:after {
+        content: "";
+        display: none;
+    }
 }
 @media (min-width: 1000px) {
   #propic {
@@ -445,6 +526,11 @@ h1 {
   width: 100%;
 }
 
+#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #menu ul li {
   display: inline;
   margin-right: 20px;
@@ -456,11 +542,24 @@ h1 {
 }
 @media (max-width: 900px) {
   #menu ul li {
-    margin-right: 100%;
     font-size: 1.6em
   }
   #menu ul li#online-feat {
     margin-right: 50px;
+  }
+
+  #menu ul li#all-li {
+    display: none;
+  }
+
+  #gsc {
+    display: none;
+  }
+  #gsc-mobile {
+    display: block;
+  }
+  #menu ul li#resume-sep {
+    display: none;
   }
 }
 
